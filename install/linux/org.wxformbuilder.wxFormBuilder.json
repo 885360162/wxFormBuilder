@@ -30,8 +30,8 @@
 			"name": "wxFormBuilder",
 			"buildsystem": "simple",
 			"build-commands": [
-				"./create_build_files4.sh",
-				"make config=release -C build/3.1/gmake",
+				"./create_build_files5.sh",
+				"make config=release -C build/3.1/gmake2",
 				"mv output/bin/wxformbuilder /app/bin",
 				"mkdir /app/share/wxformbuilder",
 				"mv output/xml /app/share/wxformbuilder",

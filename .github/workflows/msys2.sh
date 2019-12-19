@@ -5,7 +5,7 @@ ln -s /mingw32/include/binutils/symcat.h /mingw32/include/symcat.h
 ln -s /mingw32/lib/binutils/libbfd.a /mingw32/lib/libbfd.a
 ln -s /mingw32/lib/binutils/libiberty.a /mingw32/lib/libiberty.a
 
-cd build/3.0/gmake
+cd build/3.0/gmake2
 sed 's!\$(LDFLAGS) \$(RESOURCES) \$(ARCH) \$(LIBS)!\$(LIBS) \$(LDFLAGS) \$(RESOURCES) \$(ARCH)!g' *.make -i
 
 sed 's!-lbfd!-lbfd -lz!g' *.make -i

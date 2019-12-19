@@ -21,8 +21,8 @@ matrix:
         - brew install dylibbundler make
         - brew tap cdalvaro/tap
         - travis_wait 40 brew install cdalvaro/tap/wxmac
-        - ./create_build_files4.sh
-        - make config=release -C build/3.1/gmake
+        - ./create_build_files5.sh
+        - make config=release -C build/3.1/gmake2
         - cd output && zip -ry wxFormBuilder_macOS.zip wxFormBuilder.app && ls && cd -
       env: DEPLOY_FILE=output/wxFormBuilder_macOS.zip
 deploy:

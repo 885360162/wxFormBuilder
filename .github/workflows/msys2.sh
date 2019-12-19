@@ -10,4 +10,4 @@ sed 's!\$(LDFLAGS) \$(RESOURCES) \$(ARCH) \$(LIBS)!\$(LIBS) \$(LDFLAGS) \$(RESOU
 
 sed 's!-lbfd!-lbfd -lz!g' *.make -i
 
-make config=release
+make config=release verbose=1
